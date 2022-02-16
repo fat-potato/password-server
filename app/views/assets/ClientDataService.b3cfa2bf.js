@@ -1,0 +1,1 @@
+import{h as t}from"./http-common.f99229a1.js";class n{getAll(){return t.get("/clients")}get(e){return t.get(`/clients/${e}`)}create(e){return t.post("/clients",e)}update(e,r){return t.put(`/clients/${e}`,r)}delete(e){return t.delete(`/clients/${e}`)}deleteAll(){return t.delete("/clients")}findByName(e){return t.get(`/clients?name=${e}`)}}var a=new n;export{a as C};
