@@ -15,4 +15,5 @@ const db = {};
 db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 db.clients = require("./client.model.js")(sequelize, Sequelize);
+db.types = require("./type.model.js")(sequelize, Sequelize);
 module.exports = db;
