@@ -34,5 +34,8 @@ module.exports = (app) => {
   // Update a Credential type with id
   router.put("/types/:id", types.update);
 
+  // Delete a type with id
+  router.delete("/types/:id", types.delete);
+
   app.use("/api/manager", router);
 };
